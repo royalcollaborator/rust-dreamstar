@@ -1,0 +1,9 @@
+[global]
+log_level = "off"
+
+
+[dev]
+log = "debug, info, error"
+
+[prod]
+log = "error"

@@ -1,0 +1,54 @@
+[application]
+
+# App (Project) Name
+name = "front-end"
+
+# Dioxus App Default Platform
+# desktop, web
+default_platform = "web"
+
+# `build` & `serve` dist path
+out_dir = "dist"
+
+# resource (assets) file folder
+asset_dir = "assets"
+
+[web.app]
+
+# HTML title tag content
+title = "DanceBattleZ"
+
+[web.watcher]
+
+# when watcher trigger, regenerate the `index.html`
+reload_html = true
+
+# which files or dirs will be watcher monitoring
+watch_path = ["src", "assets"]
+
+# include `assets` in web platform
+[web.resource]
+
+# CSS style file
+
+style = [
+    "/main.css",
+    "/tailwind.css",
+    "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800;900&display=swap",
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css",
+]
+
+# Javascript code file
+script = [
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js",
+    "https://cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js",   
+]
+
+[web.resource.dev]
+
+# Javascript code file
+# serve: [dev-server] only
+#script = [
+#    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js",
+#    "https://cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js",
+#]

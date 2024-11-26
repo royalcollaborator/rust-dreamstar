@@ -1,0 +1,30 @@
+appenders:
+  console:
+    kind: console
+    encoder:
+      pattern: " {l} {f} - {m}{n}"
+  file:
+    kind: file
+    path: "logs/app_dev.log"
+    encoder:
+      pattern: "{d(%Y-%m-%d %H:%M:%S%.3f)} {l} - {m}{n}"
+
+root:
+  level: INFO
+  appenders:
+    - console
+    - file
+
+
+# Specific logger settings
+loggers:
+  rocket :
+    level : off
+    appenders:
+      - file
+  reqwest : 
+    level : off
+
+  rocket_cors :
+    level : off
+  

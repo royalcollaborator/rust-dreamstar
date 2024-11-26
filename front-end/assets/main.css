@@ -1,0 +1,116 @@
+body {
+	font-family: "Outfit", sans-serif;
+	background-color: black;
+	color: white;
+  }
+
+  .page-body-min-h {
+    min-height: calc(100vh - 172px);
+  }
+
+  ::-webkit-scrollbar {
+	width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+	background: #111827;
+  }
+  ::-webkit-scrollbar-thumb {
+	background: #091c44;
+  }
+
+   .grecaptcha-badge{
+     display: none !important;
+    box-shadow: none !important;
+   } 
+
+  .canvas-style {
+    border-radius: 1rem;
+    border-width: 4px;
+    border-color: #1e293b;
+    background-color: transparent;
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    height: 1rem; /* h-1 */
+    width: 100%; /* w-full */
+    background: linear-gradient(135deg, #1e293b, #1e293b);
+    border-radius: 1rem; /* rounded */
+  }
+
+  input[type="range"]::-moz-range-track {
+    height: 1rem; /* h-1 */
+    width: 100%; /* w-full */
+    background: linear-gradient(135deg, #1e293b, #1e293b);
+    border-radius: 1rem; /* rounded */
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    height: 2rem; /* h-6 */
+    width: 1.5rem; /* w-6 */
+    background: linear-gradient(135deg, #1e293b, #1e293b);
+    border: 3px solid #fff;
+    border-radius: 9999px; /* rounded-full */
+    cursor: pointer; /* cursor-pointer */
+    margin-top: -0.5rem; /* -mt-2 */
+    appearance: none;
+  }
+
+  input[type="range"]::-moz-range-thumb {
+    height: 2rem; /* h-6 */
+    width: 1.5rem; /* w-6 */
+    background: linear-gradient(135deg, #1e293b, #1e293b);
+    border: 3px solid #fff;
+    border-radius: 9999px; /* rounded-full */
+    cursor: pointer; /* cursor-pointer */
+  }
+
+  input[type="range"]::-ms-thumb {
+    height: 2rem; /* h-6 */
+    width: 1.5rem; /* w-6 */
+    background: linear-gradient(135deg, #1e293b, #1e293b);
+    border: 3px solid #fff;
+    border-radius: 9999px; /* rounded-full */
+    cursor: pointer; /* cursor-pointer */
+  }
+
+  .mobile-nav {
+    transition: max-height 0.3s ease-out, visibility 0.3s ease-out;
+  }
+
+  .mobile-nav.show {
+    max-height: 500px; /* Adjust according to your content height */
+    visibility: visible;
+  }
+
+  /* user dropdown */
+  .pc.dropdown-menu {
+    display: none;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30px;
+  }
+
+  .group:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* Show the dropdown when hovered */
+  .group:hover .dropdown-menu {
+    display: block;
+  }
+
+  /* For mobile dropdown */
+  .mobile-nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    left: auto;
+    z-index: 9999;
+    width: fit-content;
+  }
+
+  /* Ensure that mobile nav allows overflow */
+  .mobile-nav {
+    overflow: visible;
+  }
